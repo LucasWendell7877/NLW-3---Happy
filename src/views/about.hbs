@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lar das Meninas</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <link rel="icon" href="/images/logo-icon.png" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/map.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page-orphanage">
+      <aside class="animate-right sidebar">
+
+        <img src="/images/map-marker.svg" alt="Happy">
+
+        <footer>
+          <button onclick="history.back()">
+            <img src="/images/arrow-back.svg" alt="Voltar">
+          </button>
+        </footer>
+
+      </aside>
+
+      <main class="animate-appear with-sidebar">
+        <div class="orphanage-details">
+
+          <div class="orphanage-details-content">
+            <h1>Bem Vindo ao Happy!</h1>
+
+            <p>
+              Este aplicativo irá te ajudar a encontrar a casa de crianças mais próxima da sua casa
+              para visitar e poder vivenciar o carinho e atenção, uma ótima oportunidade de poder conhecer
+              novas perspectivas do mundo em que vivemos e refletir sobre como enxergamos o que está a nossa volta.
+            </p>
+
+            <p>
+                Primeiramente você irá escolher uma lar de crianças com um mapa parecido com este mapa abaixo:
+            </p>
+
+            <div class="map-container">
+              <div id="mapid"></div>
+            </div>
+
+            <p>E agora é só escolher o lar e marcar sua visita para conhecer muitas crianças cheias de amor e carinho!</p>
+
+            <hr>
+
+            <h2>Cadastro de novos lares:</h2>
+
+            <p>
+              Caso queria fazer o cadastro de um novo lar, basta clicar no botão no canto direto do mapa e pronto!
+              o lar já estará visível para outras pessoas encontrem e terem essa experiência única.
+            </p>
+
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts/page-orphanage.js"></script>
+  </body>
+</html>
