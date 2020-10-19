@@ -94,3 +94,10 @@ function toggleSelect(event) {
 
 
 }
+
+// function validate(event) {
+//     // Validar se alt e lng estao preenchidos
+
+//     event.preventDefault()
+//     alert('Selecione o ponto no mapa')
+// }
